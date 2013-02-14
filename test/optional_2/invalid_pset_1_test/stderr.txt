@@ -1,0 +1,4 @@
+Error in require.numeric.or.null(opts$threshold, "threshold") : 
+  The parameter 'threshold' must be numeric or blank.  Received 'twelve'.
+Execution halted
+Process exited with status code: 1

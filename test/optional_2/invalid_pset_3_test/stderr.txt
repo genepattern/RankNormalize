@@ -1,0 +1,4 @@
+Error in require.numeric.or.null(opts$shift, "shift") : 
+  The parameter 'shift' must be numeric or blank.  Received 'minus-eleven'.
+Execution halted
+Process exited with status code: 1
