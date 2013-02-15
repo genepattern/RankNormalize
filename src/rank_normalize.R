@@ -33,7 +33,6 @@ Rank.Normalize.Dataset <- function(input.ds, output.ds, scale = NULL,
 
 Rank.Normalize <- function(m, scale = NULL, 
                            threshold = NULL, ceiling = NULL, shift = NULL) {
-   # thresholdhold, ceilinging and shift
    if (!is.null(threshold)) { m[m < threshold] <- threshold }
    if (!is.null(ceiling)) { m[m > ceiling] <- ceiling }
    if (!is.null(shift)) { m <- m + shift }
