@@ -9,4 +9,6 @@ params:
        ceiling: ""
        shift: "10000"
 assertions:
-        jobStatus: success
+        files:
+            "all_aml_test.NORM.gct":
+                diff: "valid_pset_8_test/all_aml_test.NORM.gct"
