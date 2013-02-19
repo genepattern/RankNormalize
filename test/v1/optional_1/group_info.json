@@ -1,1 +1,0 @@
-{"defaults":{"input.file":"","ceiling":"","scale.to.value":"","shift":"","threshold":"","output.file.name":"<input.file_basename>.NORM.<input.file_extension>"},"module":"RankNormalize v. 999999999","name":"optional_1","choices":{},"optional":["input.file","scale.to.value","threshold","ceiling","shift"]}
