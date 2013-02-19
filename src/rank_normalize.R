@@ -14,8 +14,6 @@ Rank.Normalize.Dataset <- function(input.ds, output.ds, scale = NULL,
    
    dataset <- read.dataset(input.ds)
    m <- dataset$data
-   
-   # Normalize the data
    m <- Rank.Normalize(m, scale, threshold, ceiling, shift)
 
    # Write back to file, matching the input format
@@ -31,27 +29,18 @@ Rank.Normalize.Dataset <- function(input.ds, output.ds, scale = NULL,
    }  
 }
 
-Rank.Normalize <- function(m, scale = NULL, 
-                           threshold = NULL, ceiling = NULL, shift = NULL) {
+# Null value for scale means default to row count. This puts the final normalized values on an interval of [1,N]
+Rank.Normalize <- function(m, scale = NULL, threshold = NULL, ceiling = NULL, shift = NULL) {
+   if (is.null(scale)) { scale = length(m[,1]) }
    if (!is.null(threshold)) { m[m < threshold] <- threshold }
    if (!is.null(ceiling)) { m[m > ceiling] <- ceiling }
    if (!is.null(shift)) { m <- m + shift }
 
-   # column rank normalization with "average" used to break ties.
+   # column rank normalization from 1/N to 1 with "average" used to break ties.
    cols <- length(m[1,])
-   if (is.null(scale)) {
-      # Column rank from 0 to 1.
-      for (j in 1:cols) {
-         m[,j] <- rank(m[,j], ties.method = "average")
-      }
-      m <- m/length(m[,1])
-   } else {
-      # Column rank from 0 to N-1 and then scale
-      for (j in 1:cols) {
-         m[,j] <- rank(m[,j], ties.method = "average") - 1
-      }
-      m <- scale*m/(length(m[,1]) - 1)
+   for (j in 1:cols) {
+      m[,j] <- rank(m[,j], ties.method = "average")
    }
-
+   m <- m*(scale/length(m[,1]))
    return(m)
 }

@@ -31,7 +31,8 @@ p2_prefix_when_specified=
 p2_type=java.lang.String
 
 p3_default_value=
-p3_description=Result values will be scaled to this value by multiplication after normalization.  Leave this blank for no scaling.
+p3_description=Result values will be scaled to this value by multiplication after normalization.  Leave this blank to \
+scale to the number of rows in the data set.
 p3_name=scale.to.value
 p3_optional=on
 p3_prefix_when_specified=--scale.to.value=
