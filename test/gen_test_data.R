@@ -1,7 +1,7 @@
 
 #source("normalize.R")
 source("common.R")
-source("CNMF.4.R")
+source("CNMF.5.R")
 
 
 MSIG.Preprocess.Dataset(
@@ -119,10 +119,6 @@ scale=1,
 shift=-1000,
    normalization       = 6
    )
-
-source("common.R")
-source("CNMF.4.R")
-
 
 MSIG.Preprocess.Dataset(
    input.ds            = "../zoo.t.gct",
