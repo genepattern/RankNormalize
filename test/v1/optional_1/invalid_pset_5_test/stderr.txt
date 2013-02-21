@@ -1,4 +1,0 @@
-Error in require.numeric.or.null(opts$shift, "shift") : 
-  The parameter 'shift' must be numeric or blank.  Received 'ninety-nine'.
-Execution halted
-Process exited with status code: 1

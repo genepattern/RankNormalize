@@ -1,4 +1,0 @@
-Error in require.numeric.or.null(opts$scale.to.value, "scale.to.value") : 
-  The parameter 'scale.to.value' must be numeric or blank.  Received 'foo'.
-Execution halted
-Process exited with status code: 1
