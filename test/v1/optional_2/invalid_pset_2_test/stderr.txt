@@ -1,4 +1,0 @@
-Error in require.numeric.or.null(opts$ceiling, "ceiling") : 
-  The parameter 'ceiling' must be numeric or blank.  Received 'one-half'.
-Execution halted
-Process exited with status code: 1
