@@ -8,7 +8,7 @@ taskType=Statistical Methods
 os=any
 privacy=public
 description=Normalize the rows in a data set by rank
-version=Fixed a typo in a param name
+version=added taskDoc
 minGenePatternVersion=
 author=Pablo Tamayo, Broad Institute
 
