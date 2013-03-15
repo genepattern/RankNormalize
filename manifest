@@ -2,7 +2,7 @@ name=RankNormalize
 commandLine=<R2.15_HOME>/bin/Rscript --no-save --quiet --slave --no-restore <libdir>run_rank_normalize.R <libdir> <user.dir> <patches> \
    --input.file=<input.file> --output.file.name=<output.file.name> <scale.to.value> <threshold> <ceiling> <shift>
 license=
-taskDoc=
+taskDoc=RankNormalize.pdf
 fileFormat=gct,res
 taskType=Statistical Methods
 os=any
