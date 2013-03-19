@@ -8,7 +8,7 @@ taskType=Statistical Methods
 os=any
 privacy=public
 description=Normalize the rows in a data set by rank
-version=
+version=Changed to require the Ant_1.8 and checkR_2.15 plug-ins.
 minGenePatternVersion=
 author=Pablo Tamayo, Broad Institute
 
