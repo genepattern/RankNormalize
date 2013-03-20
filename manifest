@@ -1,6 +1,6 @@
+#Wed, 20 Mar 2013 14:36:32 -0400
 name=RankNormalize
-commandLine=<R2.15_HOME>/bin/Rscript --no-save --quiet --slave --no-restore <libdir>run_rank_normalize.R <libdir> <user.dir> <patches> \
-   --input.file=<input.file> --output.file.name=<output.file.name> <scale.to.value> <threshold> <ceiling> <shift>
+commandLine=<R2.15_HOME>/bin/Rscript --no-save --quiet --slave --no-restore <libdir>run_rank_normalize.R <libdir> <user.dir> <patches> --input.file\=<input.file> --output.file.name\=<output.file.name> <scale.to.value> <threshold> <ceiling> <shift>
 license=
 taskDoc=RankNormalize.pdf
 fileFormat=gct,res
@@ -8,7 +8,7 @@ taskType=Statistical Methods
 os=any
 privacy=public
 description=Normalize the rows in a data set by rank
-version=Changed to require the Ant_1.8 and checkR_2.15 plug-ins.
+version=Testing the SVN check
 minGenePatternVersion=
 author=Pablo Tamayo, Broad Institute
 
@@ -31,49 +31,36 @@ p2_prefix_when_specified=
 p2_type=java.lang.String
 
 p3_default_value=
-p3_description=Result values will be scaled to this value by multiplication after normalization.  Leave this blank to \
-scale to the number of rows in the data set.
+p3_description=Result values will be scaled to this value by multiplication after normalization.  Leave this blank to scale to the number of rows in the data set.
 p3_name=scale.to.value
 p3_optional=on
-p3_prefix_when_specified=--scale.to.value=
+p3_prefix_when_specified=--scale.to.value\=
 p3_type=java.lang.Float
 p3_value=
 
 p4_default_value=
-p4_description=Minimum threshold for values in the data set.  Any data set value below this will be increased to the \
-threshold value before normalization.  If more than one of these parameters is specified, the order of precedence is \
-threshold, then ceiling, then shift.
+p4_description=Minimum threshold for values in the data set.  Any data set value below this will be increased to the threshold value before normalization.  If more than one of these parameters is specified, the order of precedence is threshold, then ceiling, then shift.
 p4_name=threshold
 p4_optional=on
-p4_prefix_when_specified=--threshold=
+p4_prefix_when_specified=--threshold\=
 p4_type=java.lang.Float
 p4_value=
 
 p5_default_value=
-p5_description=Maximum ceiling for values in the data set.  Any data set value above this will be decreased to the \
-ceiling value before normalization.  If more than one of these parameters is specified, the order of precedence is \
-threshold, then ceiling, then shift.
+p5_description=Maximum ceiling for values in the data set.  Any data set value above this will be decreased to the ceiling value before normalization.  If more than one of these parameters is specified, the order of precedence is threshold, then ceiling, then shift.
 p5_name=ceiling
 p5_optional=on
-p5_prefix_when_specified=--ceiling=
+p5_prefix_when_specified=--ceiling\=
 p5_type=java.lang.Float
 p5_value=
 
 p6_default_value=
-p6_description=Shift all values in the data set.  The shift value will be added to all data set values \
-before normalization.  If more than one of these parameters is specified, the order of precedence is \
-threshold, then ceiling, then shift.
+p6_description=Shift all values in the data set.  The shift value will be added to all data set values before normalization.  If more than one of these parameters is specified, the order of precedence is threshold, then ceiling, then shift.
 p6_name=shift
 p6_optional=on
-p6_prefix_when_specified=--shift=
+p6_prefix_when_specified=--shift\=
 p6_type=java.lang.Float
 p6_value=
 
-requiredPatchLSIDs=urn\:lsid\:broadinstitute.org\:plugin\:Ant_1.8\:0.2,\
-   urn\:lsid\:broadinstitute.org\:plugin\:checkR_2.15\:0.1,\
-   urn\:lsid\:broadinstitute.org\:rlib.2.15\:getopt_1.17\:1,\
-   urn\:lsid\:broadinstitute.org\:rlib.2.15\:optparse_0.9.5\:1
-requiredPatchURLs=http\://www.broadinstitute.org/webservices/gpModuleRepository/download/dev/patch/?file=/Ant_1_8/broadinstitute.org\:plugin/Ant_1.8/0.2/Ant_1_8.zip,\
-   http\://www.broadinstitute.org/webservices/gpModuleRepository/download/dev/patch/?file=/checkR_2.15/broadinstitute.org\:plugin/checkR_2.15/0.1/checkR_2.15.zip,\
-   http\://www.broadinstitute.org/webservices/gpModuleRepository/download/prod/patch/?file=/rlib.2.15_getopt_1.17/broadinstitute.org\:rlib.2.15/getopt_1.17/1/rlib.2.15_getopt_1.17.zip,\
-   http\://www.broadinstitute.org/webservices/gpModuleRepository/download/prod/patch/?file=/rlib.2.15_optparse_0.9.5/broadinstitute.org\:rlib.2.15/optparse_0.9.5/1/rlib.2.15_optparse_0.9.5.zip
+requiredPatchLSIDs=urn\:lsid\:broadinstitute.org\:plugin\:Ant_1.8\:0.2,urn\:lsid\:broadinstitute.org\:plugin\:checkR_2.15\:0.1,urn\:lsid\:broadinstitute.org\:rlib.2.15\:getopt_1.17\:1,urn\:lsid\:broadinstitute.org\:rlib.2.15\:optparse_0.9.5\:1
+requiredPatchURLs=http\://www.broadinstitute.org/webservices/gpModuleRepository/download/dev/patch/?file\=/Ant_1_8/broadinstitute.org\:plugin/Ant_1.8/0.2/Ant_1_8.zip,http\://www.broadinstitute.org/webservices/gpModuleRepository/download/dev/patch/?file\=/checkR_2.15/broadinstitute.org\:plugin/checkR_2.15/0.1/checkR_2.15.zip,http\://www.broadinstitute.org/webservices/gpModuleRepository/download/prod/patch/?file\=/rlib.2.15_getopt_1.17/broadinstitute.org\:rlib.2.15/getopt_1.17/1/rlib.2.15_getopt_1.17.zip,http\://www.broadinstitute.org/webservices/gpModuleRepository/download/prod/patch/?file\=/rlib.2.15_optparse_0.9.5/broadinstitute.org\:rlib.2.15/optparse_0.9.5/1/rlib.2.15_optparse_0.9.5.zip
