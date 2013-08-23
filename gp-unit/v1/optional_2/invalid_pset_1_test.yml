@@ -2,7 +2,7 @@
 #
 module: RankNormalize
 params:
-       input.file: "/Volumes/xchip_sqa/Modules/TestSuiteData/RankNormalize/v1/input/all_aml_test.gct"
+       input.file: "all_aml_test.gct"
        output.file.name: "<input.file_basename>.NORM.<input.file_extension>"
        scale.to.value: ""
        threshold: "twelve"
