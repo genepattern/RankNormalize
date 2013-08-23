@@ -12,4 +12,5 @@ assertions:
         jobStatus: fail
         files:
             "stderr.txt":
+                diffCmd: ../diffIgnoreGpTraces.sh
                 diff: "/Volumes/xchip_sqa/Modules/TestSuiteData/RankNormalize/v1/output/optional_2/invalid_pset_2_test/stderr.txt"
