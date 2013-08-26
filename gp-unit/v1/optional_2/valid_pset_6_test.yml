@@ -9,6 +9,7 @@ params:
        ceiling: ""
        shift: "1000"
 assertions:
+        diffCmd: diff -q --strip-trailing-cr
         files:
             "all_aml_test.NORM.gct":
                 diff: "/Volumes/xchip_sqa/Modules/TestSuiteData/RankNormalize/v1/output/optional_2/valid_pset_6_test/all_aml_test.NORM.gct"

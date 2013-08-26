@@ -9,6 +9,7 @@ params:
        ceiling: ""
        shift: ""
 assertions:
+        diffCmd: diff -q --strip-trailing-cr
         files:
             "zoo.t.NORM.gct":
                 diff: "/Volumes/xchip_sqa/Modules/TestSuiteData/RankNormalize/v1/output/defaults/valid_pset_3_test/zoo.t.NORM.gct"

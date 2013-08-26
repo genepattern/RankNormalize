@@ -9,7 +9,7 @@ diffFile2=`mktemp $base2.XXXXXX`
 /usr/bin/perl $execDir/cleanGpTraces.pl $1 > $diffFile1
 /usr/bin/perl $execDir/cleanGpTraces.pl $2 > $diffFile2
 
-diff -q $diffFile1 $diffFile2
+diff -q --strip-trailing-cr $diffFile1 $diffFile2
 status=$?
 rm -f $diffFile1 $diffFile2
 
