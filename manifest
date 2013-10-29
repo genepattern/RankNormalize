@@ -1,4 +1,4 @@
-#Wed, 20 Mar 2013 17:44:46 -0400
+#Tue, 29 Oct 2013 09:15:05 -0400
 name=RankNormalize
 commandLine=<R2.15_HOME>/bin/Rscript --no-save --quiet --slave --no-restore <libdir>run_rank_normalize.R <libdir> <user.dir> <patches> --input.file\=<input.file> --output.file.name\=<output.file.name> <scale.to.value> <threshold> <ceiling> <shift>
 license=
@@ -8,7 +8,7 @@ taskType=Statistical Methods
 os=any
 privacy=public
 description=Normalize the rows in a data set by rank
-version=Updated to require the R Installer plug-in.  Not slated for a release right now, but it's ready if/when the time comes. 
+version=Fixed the URL for the R Installer plug-in
 minGenePatternVersion=
 author=Pablo Tamayo, Broad Institute
 
@@ -62,12 +62,8 @@ p6_prefix_when_specified=--shift\=
 p6_type=java.lang.Float
 p6_value=
 
-requiredPatchLSIDs=urn\:lsid\:broadinstitute.org\:plugin\:Ant_1.8\:1,\
-  urn\:lsid\:broadinstitute.org\:plugin\:R2.15_Installer\:0.5,\
-  urn\:lsid\:broadinstitute.org\:rlib.2.15\:getopt_1.17\:1,urn\:lsid\:broadinstitute.org\:rlib.2.15\:optparse_0.9.5\:1
-requiredPatchURLs=http\://www.broadinstitute.org/webservices/gpModuleRepository/download/prod/patch/?file\=/Ant_1_8/broadinstitute.org\:plugin/Ant_1.8/1/Ant_1_8.zip,\
-  http\://www.broadinstitute.org/webservices/gpModuleRepository/download/dev/patch/?file\=/R2.15_Installer/broadinstitute.org\:plugin/R2.15_Installer/0.5/R2.15_Installer.zip,\
-  http\://www.broadinstitute.org/webservices/gpModuleRepository/download/prod/patch/?file\=/rlib.2.15_getopt_1.17/broadinstitute.org\:rlib.2.15/getopt_1.17/1/rlib.2.15_getopt_1.17.zip,http\://www.broadinstitute.org/webservices/gpModuleRepository/download/prod/patch/?file\=/rlib.2.15_optparse_0.9.5/broadinstitute.org\:rlib.2.15/optparse_0.9.5/1/rlib.2.15_optparse_0.9.5.zip
+requiredPatchLSIDs=urn\:lsid\:broadinstitute.org\:plugin\:Ant_1.8\:1,urn\:lsid\:broadinstitute.org\:plugin\:R2.15_Installer\:0.5,urn\:lsid\:broadinstitute.org\:rlib.2.15\:getopt_1.17\:1,urn\:lsid\:broadinstitute.org\:rlib.2.15\:optparse_0.9.5\:1
+requiredPatchURLs=http\://www.broadinstitute.org/webservices/gpModuleRepository/download/prod/patch/?file\=/Ant_1_8/broadinstitute.org\:plugin/Ant_1.8/1/Ant_1_8.zip,http\://www.broadinstitute.org/webservices/gpModuleRepository/download/dev/patch/?file\=/R2.15_Installer/broadinstitute.org\:plugin/R2.15_Installer/0.5/R2.15_Installer.zip,http\://www.broadinstitute.org/webservices/gpModuleRepository/download/prod/patch/?file\=/rlib.2.15_getopt_1.17/broadinstitute.org\:rlib.2.15/getopt_1.17/1/rlib.2.15_getopt_1.17.zip,http\://www.broadinstitute.org/webservices/gpModuleRepository/download/prod/patch/?file\=/rlib.2.15_optparse_0.9.5/broadinstitute.org\:rlib.2.15/optparse_0.9.5/1/rlib.2.15_optparse_0.9.5.zip
 
 # The following should be the final LSID & URL for R2.15_Installer when it's done.  Remove this comment and place the values above.
 #  urn\:lsid\:broadinstitute.org\:plugin\:R2.15_Installer\:1,\
