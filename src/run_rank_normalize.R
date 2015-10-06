@@ -8,15 +8,14 @@
 ## whatsoever. Neither the Broad Institute nor MIT can be responsible for its
 ## use, misuse, or functionality.
 
+suppressMessages(suppressWarnings(library(getopt)))
+suppressMessages(suppressWarnings(library(optparse)))
+
+sessionInfo()
+
 args <- commandArgs(trailingOnly=TRUE)
 
-vers <- "2.15"            # R version
 libdir <- args[1]
-server.dir <- args[2]
-patch.dir <- args[3]
-
-source(file.path(libdir, "loadRLibrary.R"))
-load.packages(libdir, patch.dir, server.dir, vers)
 
 option_list <- list(
   make_option("--input.file", dest="input.file"),
@@ -55,7 +54,7 @@ shift <- require.numeric.or.null(opts$shift, "shift")
 source(file.path(libdir, "common.R"))
 source(file.path(libdir, "rank_normalize.R"))
 
-sessionInfo()
-
 Rank.Normalize.Dataset(opts$input.file, opts$output.file.name, scale = scale, 
                        threshold = threshold, ceiling = ceiling, shift = shift)
+
+sessionInfo()

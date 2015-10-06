@@ -9,10 +9,7 @@
 		<antcall target="prezip" />
 		<zip destfile="${dest.dir}/${ant.project.name}.zip" whenempty="fail" defaultexcludes="true">
             <fileset dir="src" includes="*.R" />
-            <fileset dir="." includes="manifest, *.pdf, *.txt" excludes="test/**" />
-            <fileset dir="../common/R">
-               <include name="loadRLibrary.R"/>
-           </fileset>
+            <fileset dir="." includes="manifest, r.package.info, *.pdf, *.txt" excludes="test/**" />
         </zip>
 		<antcall target="postzip" />
 	</target>

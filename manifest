@@ -1,6 +1,6 @@
 #Tue, 29 Oct 2013 09:15:05 -0400
 name=RankNormalize
-commandLine=<R2.15_Rscript> --no-save --quiet --slave --no-restore <libdir>run_rank_normalize.R <libdir> <user.dir> <patches> --input.file\=<input.file> --output.file.name\=<output.file.name> <scale.to.value> <threshold> <ceiling> <shift>
+commandLine=<R2.15_Rscript> --no-save --quiet --slave --no-restore <libdir>run_rank_normalize.R <libdir> --input.file\=<input.file> --output.file.name\=<output.file.name> <scale.to.value> <threshold> <ceiling> <shift>
 license=
 taskDoc=RankNormalize.pdf
 fileFormat=gct,res
@@ -8,9 +8,10 @@ taskType=Statistical Methods
 os=any
 privacy=public
 description=[**Beta Release** Contact gp-help with any issues. Check stdout.txt and stderr.txt for errors]Normalize the rows in a data set by rank
-version=Updates the R Installer plug-in for better portability .
+version=Updated to make use of the R package installer.
 minGenePatternVersion=
 author=Pablo Tamayo, Broad Institute
+language=R2.15.3
 
 p1_default_value=
 p1_description=The dataset to be normalized
@@ -62,9 +63,5 @@ p6_prefix_when_specified=--shift\=
 p6_type=java.lang.Float
 p6_value=
 
-requiredPatchLSIDs=urn\:lsid\:broadinstitute.org\:plugin\:Ant_1.8\:1,\
-urn\:lsid\:broadinstitute.org\:plugin\:R2.15_Installer\:2,\
-urn\:lsid\:broadinstitute.org\:rlib.2.15\:getopt_1.17\:1,urn\:lsid\:broadinstitute.org\:rlib.2.15\:optparse_0.9.5\:1
-requiredPatchURLs=http\://www.broadinstitute.org/webservices/gpModuleRepository/download/prod/patch/?file\=/Ant_1_8/broadinstitute.org\:plugin/Ant_1.8/1/Ant_1_8.zip,\
-http\://www.broadinstitute.org/webservices/gpModuleRepository/download/prod/patch/?file\=/R2.15_Installer/broadinstitute.org\:plugin/R2.15_Installer/2/R2.15_Installer.zip,\
-http\://www.broadinstitute.org/webservices/gpModuleRepository/download/prod/patch/?file\=/rlib.2.15_getopt_1.17/broadinstitute.org\:rlib.2.15/getopt_1.17/1/rlib.2.15_getopt_1.17.zip,http\://www.broadinstitute.org/webservices/gpModuleRepository/download/prod/patch/?file\=/rlib.2.15_optparse_0.9.5/broadinstitute.org\:rlib.2.15/optparse_0.9.5/1/rlib.2.15_optparse_0.9.5.zip
+requiredPatchLSIDs=
+requiredPatchURLs=
