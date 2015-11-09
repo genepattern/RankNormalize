@@ -1,6 +1,7 @@
 #lsid=urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00315:999999999
 #
 module: RankNormalize
+name: invalid_pset_1_test
 params:
        input.file: "<%gpunit.testData%>gpunit/RankNormalize/v1/input/all_aml_test.gct"
        output.file.name: "<input.file_basename>.NORM.<input.file_extension>"

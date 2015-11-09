@@ -1,6 +1,7 @@
 #lsid=urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00315:999999999
 #
 module: RankNormalize
+name: valid_pset_5_test
 params:
        input.file: "<%gpunit.testData%>gpunit/RankNormalize/v1/input/all_aml_test.gct"
        output.file.name: "<input.file_basename>.NORM.<input.file_extension>"
@@ -9,7 +10,7 @@ params:
        ceiling: "1000"
        shift: ""
 assertions:
-    jobStatus: success
+       jobStatus: success
 #        diffCmd: diff -q --strip-trailing-cr
 #        files:
 #            "all_aml_test.NORM.gct":

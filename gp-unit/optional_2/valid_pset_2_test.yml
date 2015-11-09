@@ -9,7 +9,7 @@ params:
        ceiling: ""
        shift: ""
 assertions:
-    jobStatus: success
+       jobStatus: success
 #        diffCmd: diff -q --strip-trailing-cr
 #        files:
 #            "all_aml_test.NORM.gct":
