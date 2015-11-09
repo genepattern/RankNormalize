@@ -2,15 +2,16 @@
 name=RankNormalize
 commandLine=<R2.15_Rscript> --no-save --quiet --slave --no-restore <libdir>run_rank_normalize.R <libdir> --input.file\=<input.file> --output.file.name\=<output.file.name> <scale.to.value> <threshold> <ceiling> <shift>
 license=
-taskDoc=RankNormalize.pdf
+taskDoc=doc.html
 fileFormat=gct,res
 taskType=Statistical Methods
 os=any
 privacy=public
-description=[**Beta Release** Contact gp-help with any issues. Check stdout.txt and stderr.txt for errors]Normalize the rows in a data set by rank
-version=Updated to make use of the R package installer.
+quality=preproduction
+description=Normalize the rows in a data set by rank
+version=Updated to make use of the R package installer and add HTML documentation.
 minGenePatternVersion=
-author=Pablo Tamayo, Broad Institute
+author=Pablo Tamayo, David Eby, Broad Institute
 language=R2.15.3
 
 p1_default_value=
