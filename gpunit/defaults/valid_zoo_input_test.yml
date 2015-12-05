@@ -1,7 +1,5 @@
-#lsid=urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00315:999999999
-#
 module: RankNormalize
-name: valid_pset_3_test
+name: valid_zoo_input_test
 params:
        input.file: "<%gpunit.testData%>gpunit/RankNormalize/v1/input/zoo.t.gct"
        output.file.name: "<input.file_basename>.NORM.<input.file_extension>"
