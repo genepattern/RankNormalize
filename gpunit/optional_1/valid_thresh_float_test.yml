@@ -1,5 +1,7 @@
+#module: urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00315:2
 module: RankNormalize
 name: valid_thresh_float_test
+description: Positive test of valid float input for threshold using the ALL_AML dataset
 params:
        input.file: "<%gpunit.testData%>gpunit/RankNormalize/v1/input/all_aml_test.gct"
        output.file.name: "<input.file_basename>.NORM.<input.file_extension>"
@@ -9,7 +11,7 @@ params:
        shift: ""
 assertions:
        jobStatus: success
-#        diffCmd: diff -q --strip-trailing-cr
-#        files:
-#            "all_aml_test.NORM.gct":
-#                diff: "<%gpunit.resultData%>RankNormalize/v1/output/optional_1/valid_pset_4_test/all_aml_test.NORM.gct"
+#       diffCmd: diff -q --strip-trailing-cr
+#       files:
+#           "all_aml_test.NORM.gct":
+#               diff: "<%gpunit.resultData%>RankNormalize/v1/output/optional_1/valid_pset_4_test/all_aml_test.NORM.gct"
