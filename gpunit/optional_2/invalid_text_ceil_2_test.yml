@@ -14,4 +14,4 @@ assertions:
 #       files:
 #           "stderr.txt":
 #               diffCmd: ../diffIgnoreGpTraces.sh
-#               diff: "<%gpunit.resultData%>RankNormalize/v1/output/optional_2/invalid_pset_2_test/stderr.txt"
+#               diff: "<%gpunit.resultData%>gpunit/RankNormalize/v1/output/optional_2/invalid_text_ceil_2_test/stderr.txt"

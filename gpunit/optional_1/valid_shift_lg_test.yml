@@ -14,4 +14,4 @@ assertions:
 #       diffCmd: diff -q --strip-trailing-cr
 #       files:
 #           "all_aml_test.NORM.gct":
-#               diff: "<%gpunit.resultData%>RankNormalize/v1/output/optional_1/valid_pset_8_test/all_aml_test.NORM.gct"
+#               diff: "<%gpunit.resultData%>gpunit/RankNormalize/v1/output/optional_1/valid_shift_lg_test/all_aml_test.NORM.gct"
